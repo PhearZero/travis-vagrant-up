@@ -11,7 +11,7 @@ install:
   - VBoxManage -v
   - sudo apt-get install vagrant
 script:
-  - /opt/vagrant/bin/vagrant up
+  - vagrant up
   - ls
-  - /opt/vagrant/bin/vagrant ssh --command "touch /vagrant/smash_it_with_a_hammer"
+  - vagrant ssh --command "touch /vagrant/smash_it_with_a_hammer"
   - ls
